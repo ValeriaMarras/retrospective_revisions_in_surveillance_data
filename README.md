@@ -48,20 +48,6 @@ This project is divided into two parts:
 ## Prerequisites
 
 - Python 3.7 or higher  
-- Required Python packages:
-  - `pandas`
-  - `numpy`
-  - `matplotlib`
-  - `requests`
-  - `beautifulsoup4`
-  - `seaborn`
-
-Install the dependencies using pip:
-
-```bash
-pip install pandas numpy matplotlib requests beautifulsoup4 seaborn
-```
-
 ---
 
 ## File Structure
