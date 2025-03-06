@@ -63,42 +63,6 @@ This project is divided into two parts:
 
 ---
 
-## Usage
-
-### 1. Generate the Dataset
-
-Run the dataset generation script to create the CSV file with revision metrics:
-
-```bash
-python dataset_generation.py
-```
-
-The script will:
-- Download snapshot files and the final reported data.
-- Process and merge the data.
-- Save the final dataset as `1_ILI_revisions_dataset_season_24_25.csv` in the `ILI_datasets` folder.
-
-*Tip:* Check the console output for error messages (e.g., if data for a specific country is missing).
-
-### 2. Analyze the Data
-
-Once the dataset is generated, run the analysis script:
-
-```bash
-python data_analysis.py
-```
-
-The script will:
-- Load the generated dataset (or use the provided URLs).
-- Compute metrics such as:
-  - Revised data points per country.
-  - ILI incidence plots (with overlaying snapshot and final reports).
-  - Error metrics (AE and APE) via boxplots.
-  - Revision probabilities and revision magnitudes by week.
-- Display several plots to visualize the results.
-
----
-
 ## Configuration
 
 - **URL Settings:**  
