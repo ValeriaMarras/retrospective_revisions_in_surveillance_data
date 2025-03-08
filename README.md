@@ -1,6 +1,6 @@
 # ILI and ARI Revisions Dataset and Analysis
 
-Repository for generating and analyzing Influenza-Like Illness (ILI) and Acute Respiratory Infection (ARI) incidence data, focusing on anticipating data revisions to improve forecasting accuracy.
+This repository is dedicated to generating and analyzing Influenza-Like Illness (ILI) and Acute Respiratory Infection (ARI) data to improve forecast performance by anticipating data revisions.
 
 ## Table of Contents
 
@@ -8,55 +8,53 @@ Repository for generating and analyzing Influenza-Like Illness (ILI) and Acute R
 - [Prerequisites](#prerequisites)
 - [File Structure](#file-structure)
 - [Usage](#usage)
-  - [1. Generate the Dataset](#1-generate-the-dataset)
-  - [2. Analyze the Data](#2-analyze-the-data)
-  - [3. Forecasting Improvement](#3-forecasting-improvement)
+  - [1. Generating the Revision Dataset](#1-generating-the-revision-dataset)
+  - [2. Analyzing Revision Data](#2-analyzing-revision-data)
+  - [3. Enhancing Forecasting Models](#3-enhancing-forecasting-models)
 - [Configuration](#configuration)
 - [License](#license)
 - [Sources](#sources)
 
 ## Overview
 
-This project is divided into three parts:
-
-1. **Dataset Generation**: Downloads snapshot files for both ILI and ARI, processes the data to compute revision metrics, and saves the results.
-2. **Data Analysis**: Computes revision metrics and visualizes data revision patterns and their impact on forecasting accuracy.
-3. **Forecasting Improvement**: Utilizes machine learning models to estimate data revisions and applies these estimates to enhance the performance of forecasting models.
+The project is structured to handle two main aspects:
+1. Analyzing retrospective corrections in surveillance data to quantify and characterize revisions.
+2. Developing models to estimate data revisions for newly reported data to improve the quality of forecasting models.
 
 ## Prerequisites
 
 - Python 3.7 or higher
+- Libraries: pandas, numpy, matplotlib, sklearn, joblib
 
 ## File Structure
 
-- **dataset_generation.py**: Handles data retrieval, processing, and saving.
-- **data_analysis.py**: Performs data analysis, including visualization and revision estimation.
-- **forecast_improvement.py**: Applies revision estimates to improve forecasting models.
+- **dataset_generation.py**: Script to download and process snapshot data, and to generate a dataset with calculated revision metrics.
+- **data_analysis.py**: Analyzes revision data, including calculating the frequency and magnitude of data revisions, and visualizing these trends.
+- **forecasting_models.py**: Applies machine learning techniques to predict future revisions and integrates these predictions into forecasting models.
 
 ## Usage
 
-### 1. Generate the Dataset
+### 1. Generating the Revision Dataset
 
-Describes the process of dataset creation, including retrieval and processing steps.
+Run `dataset_generation.py` to download snapshot files, calculate revision metrics like revision status and data age, and save the processed dataset.
 
-### 2. Analyze the Data
+### 2. Analyzing Revision Data
 
-Details on how to perform data analysis, including loading datasets, calculating revision metrics, and visualizing results.
+Execute `data_analysis.py` to load the generated dataset and perform statistical analysis on revision metrics, including plotting the revision magnitudes and probabilities.
 
-### 3. Forecasting Improvement
+### 3. Enhancing Forecasting Models
 
-Explains how to use estimated revisions to enhance the accuracy of forecasting models.
+Use `forecasting_models.py` to apply the revision estimates from the machine learning models to improve the accuracy of short-term forecasting models.
 
 ## Configuration
 
-Adjustments for data sources, filtering options, and selected countries are described.
+Details how to configure the scripts to use different data sources or to filter data by specific dates or countries.
 
 ## License
 
-Standard licensing information.
 
 ## Sources
 
-- [ERVISS Dataset](https://erviss.org/)
+- Data is based on the [ERVISS surveillance system](https://erviss.org/).
 
-By following these guidelines, users can effectively generate datasets, analyze data, and improve forecasting models using the revised methodologies.
+By following these guidelines, users can effectively replicate and extend the analysis to accommodate new datasets or different infectious diseases.
