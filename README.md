@@ -1,9 +1,6 @@
-# ILI Revisions Dataset and Analysis
+# ILI and ARI Revisions Dataset and Analysis
 
-A repository to generate and analyze ILI (Influenza-Like Illness) incidence data.  
-This project contains two main Python scripts: one to generate a dataset with revision metrics and another to perform data analysis and visualization.
-
----
+Repository for generating and analyzing Influenza-Like Illness (ILI) and Acute Respiratory Infection (ARI) incidence data, focusing on anticipating data revisions to improve forecasting accuracy.
 
 ## Table of Contents
 
@@ -13,72 +10,53 @@ This project contains two main Python scripts: one to generate a dataset with re
 - [Usage](#usage)
   - [1. Generate the Dataset](#1-generate-the-dataset)
   - [2. Analyze the Data](#2-analyze-the-data)
+  - [3. Forecasting Improvement](#3-forecasting-improvement)
 - [Configuration](#configuration)
 - [License](#license)
-
----
+- [Sources](#sources)
 
 ## Overview
 
-This project is divided into two parts:
+This project is divided into three parts:
 
-1. **Dataset Generation Script**  
-   - Downloads snapshot files.
-   - Loads the final reported data.
-   - Processes the data for each country by:
-     - Extracting dates from file names.
-     - Calculating revision status (comparing snapshot values with final values).
-     - Determining data age (in weeks, relative to the original report).
-     - Computing the revision amount (difference between final and snapshot values).
-     - Calculating the week in season.
-   - Saves the final processed dataset as a CSV file in the `ILI_datasets` folder.
-
-2. **Data Analysis and Visualization Script**  
-   - Loads the generated dataset (or uses data directly from URLs).
-   - Computes various revision metrics such as:
-     - Number of revised data points per country.
-     - ILI incidence plots for selected countries (snapshot reports and final data).
-     - Error metrics (Error (E) and Percentage Error (PE)) via boxplots.
-     - Revision probability by week (weeks after the original report).
-     - Revision magnitude (average absolute change) per week.
-   - Generates several plots to help visualize the analysis results.
-
----
+1. **Dataset Generation**: Downloads snapshot files for both ILI and ARI, processes the data to compute revision metrics, and saves the results.
+2. **Data Analysis**: Computes revision metrics and visualizes data revision patterns and their impact on forecasting accuracy.
+3. **Forecasting Improvement**: Utilizes machine learning models to estimate data revisions and applies these estimates to enhance the performance of forecasting models.
 
 ## Prerequisites
 
-- Python 3.7 or higher  
----
+- Python 3.7 or higher
 
 ## File Structure
 
-- **dataset_generation.py**  
-  Retrieves snapshot files from a GitHub repository, loads snapshot and final reported data, processes the data to compute revision metrics, and saves the final dataset as a CSV file (`1_ILI_revisions_dataset_season_24_25_prova.csv`) in the `ILI_datasets` folder.
+- **dataset_generation.py**: Handles data retrieval, processing, and saving.
+- **data_analysis.py**: Performs data analysis, including visualization and revision estimation.
+- **forecast_improvement.py**: Applies revision estimates to improve forecasting models.
 
-- **data_analysis.py**  
-  Loads the generated dataset (or accesses the data from the URLs), computes various revision metrics (e.g., revised data points, error metrics, revision probabilities, and revision magnitudes), and generates multiple plots for visualization.
+## Usage
 
-- **README.md**  
-  This file.
+### 1. Generate the Dataset
 
----
+Describes the process of dataset creation, including retrieval and processing steps.
+
+### 2. Analyze the Data
+
+Details on how to perform data analysis, including loading datasets, calculating revision metrics, and visualizing results.
+
+### 3. Forecasting Improvement
+
+Explains how to use estimated revisions to enhance the accuracy of forecasting models.
 
 ## Configuration
 
-- **URL Settings:**  
-  Update the repository and URL settings in the scripts if data sources change.
-
-- **Date Filtering:**  
-  Both scripts filter data from a fixed starting date (e.g., October 2024). Adjust the filter as needed.
-
-- **Country Selection:**  
-  You can modify the list of selected countries (e.g., `['BE', 'DK', 'FR', 'NL', 'NO', 'IT']`) in the analysis script.
-
-
----
+Adjustments for data sources, filtering options, and selected countries are described.
 
 ## License
 
----
+Standard licensing information.
 
-By following these instructions, you should be able to generate the dataset and perform the analysis successfully.
+## Sources
+
+- [ERVISS Dataset](https://erviss.org/)
+
+By following these guidelines, users can effectively generate datasets, analyze data, and improve forecasting models using the revised methodologies.
