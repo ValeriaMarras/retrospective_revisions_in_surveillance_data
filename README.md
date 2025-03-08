@@ -24,7 +24,6 @@ The project is structured to handle two main aspects:
 ## Prerequisites
 
 - Python 3.7 or higher
-- Libraries: pandas, numpy, matplotlib, sklearn, joblib
 
 ## File Structure
 
