@@ -11,7 +11,6 @@ This repository is dedicated to generating and analyzing Influenza-Like Illness 
   - [1. Generating the Revision Dataset](#1-generating-the-revision-dataset)
   - [2. Analyzing Revision Data](#2-analyzing-revision-data)
   - [3. Enhancing Forecasting Models](#3-enhancing-forecasting-models)
-- [Configuration](#configuration)
 - [License](#license)
 - [Sources](#sources)
 
