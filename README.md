@@ -52,4 +52,6 @@ Use `forecasting_models.py` to apply the revision estimates from the machine lea
 
 - Data is based on the [ERVISS surveillance system](https://erviss.org/).
 
+##
+
 By following these guidelines, users can effectively replicate and extend the analysis to accommodate new datasets or different infectious diseases.
