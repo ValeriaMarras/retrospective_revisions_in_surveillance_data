@@ -45,9 +45,6 @@ Execute `data_analysis.py` to load the generated dataset and perform statistical
 
 Use `forecasting_models.py` to apply the revision estimates from the machine learning models to improve the accuracy of short-term forecasting models.
 
-## Configuration
-
-Details how to configure the scripts to use different data sources or to filter data by specific dates or countries.
 
 ## License
 
