@@ -26,23 +26,23 @@ The project is structured to handle two main aspects:
 
 ## File Structure
 
-- **dataset_generation.py**: Script to download and process snapshot data, and to generate a dataset with calculated revision metrics.
-- **data_analysis.py**: Analyzes revision data, including calculating the frequency and magnitude of data revisions, and visualizing these trends.
-- **forecasting_models.py**: Applies machine learning techniques to predict future revisions and integrates these predictions into forecasting models.
+- **dataset_generation**: Script to download and process snapshot data, and to generate a dataset with calculated revision metrics.
+- **data_analysis**: Analyzes revision data, including calculating the frequency and magnitude of data revisions, and visualizing these trends.
+- **revisions_models**: Applies machine learning techniques to predict future revisions and integrates these predictions into forecasting models.
 
 ## Usage
 
 ### 1. Generating the Revision Dataset
 
-Run `dataset_generation.py` to download snapshot files, calculate revision metrics like revision status and data age, and save the processed dataset.
+Run `dataset_generation` to download snapshot files, calculate revision metrics like revision status and data age, and save the processed dataset.
 
 ### 2. Analyzing Revision Data
 
-Execute `data_analysis.py` to load the generated dataset and perform statistical analysis on revision metrics, including plotting the revision magnitudes and probabilities.
+Execute `data_analysis` to load the generated dataset and perform statistical analysis on revision metrics, including plotting the revision magnitudes and probabilities.
 
-### 3. Enhancing Forecasting Models
+### 3. Revision Estimation Models
 
-Use `forecasting_models.py` to apply the revision estimates from the machine learning models to improve the accuracy of short-term forecasting models.
+Use `revisions_models` to estimate the new revisions from the machine learning models and baseline models.
 
 
 ## License
