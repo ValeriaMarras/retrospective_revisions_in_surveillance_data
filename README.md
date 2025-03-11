@@ -28,7 +28,7 @@ The project is structured to handle two main aspects:
 
 - **dataset_generation.ipynb**: Script to download and process snapshot data, and to generate a dataset with calculated revision metrics.
 - **data_analysis.ipynb**: Analyzes revision data, including calculating the frequency and magnitude of data revisions, and visualizing these trends.
-- **revisions_models.ipynb**: Applies machine learning techniques to predict future revisions and integrates these predictions into forecasting models.
+- **revisions_models.ipynb**: Applies machine learning techniques to predict future revisions.
 
 ## Usage
 
