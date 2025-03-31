@@ -12,7 +12,6 @@ This approach was presented at Respicast community meeting on 3 March 2025.
   - [1. Generating the Revision Dataset](#1-generating-the-revision-dataset)
   - [2. Analyzing Revision Data](#2-analyzing-revision-data)
   - [3. Enhancing Forecasting Models](#3-enhancing-forecasting-models)
-- [License](#license)
 - [Sources](#sources)
 
 ## Overview
@@ -45,9 +44,6 @@ Execute `data_analysis.ipynb` to load the generated dataset and perform statisti
 ### 3. Revision Estimation Models
 
 Use `revisions_models.ipynb` to estimate the new revisions from the machine learning models and baseline models.
-
-
-## License
 
 
 ## Sources
