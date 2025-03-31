@@ -1,4 +1,4 @@
-# ILI and ARI Revisions Dataset and Analysis
+# Retrospective revisions in ERVISS surveillance data
 
 This repository is dedicated to generating and analyzing Influenza-Like Illness (ILI) and Acute Respiratory Infection (ARI) data to improve forecast performance by anticipating data revisions.
 This approach was presented at Respicast community meeting on 3 March 2025.
