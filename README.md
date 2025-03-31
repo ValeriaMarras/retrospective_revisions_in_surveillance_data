@@ -1,6 +1,7 @@
 # ILI and ARI Revisions Dataset and Analysis
 
 This repository is dedicated to generating and analyzing Influenza-Like Illness (ILI) and Acute Respiratory Infection (ARI) data to improve forecast performance by anticipating data revisions.
+This approach was presented at Respicast community meeting on 3 March 2025.
 
 ## Table of Contents
 
@@ -29,6 +30,7 @@ The project is structured to handle two main aspects:
 - **dataset_generation.ipynb**: Script to download and process snapshot data, and to generate a dataset with calculated revision metrics.
 - **data_analysis.ipynb**: Analyzes revision data, including calculating the frequency and magnitude of data revisions, and visualizing these trends.
 - **revisions_models.ipynb**: Applies machine learning techniques to predict future revisions.
+- **improving_forecast_performance_by_anticipating_data_revision.pdf**: slides from Respicast community meeting presentation.
 
 ## Usage
 
